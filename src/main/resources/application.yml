@@ -1,0 +1,18 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /xxwl
+spring:
+  application:
+    name: myWX
+  mvc:
+    static-path-pattern: /**
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.106.239.246:3306/wx?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
